@@ -296,6 +296,101 @@ body {
     object-fit: contain;
     outline: none
 }
+
+/* ////////////////////////////////OFF-CANVASS////////////////////////////////////////////////// */
+/* ////////////////////////////////OFF-CANVASS////////////////////////////////////////////////// */
+
+.off-canvas {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-flex-flow: nowrap;
+    flex-flow: nowrap;
+    height: 100%;
+    position: relative;
+    width: 100%
+}
+
+.off-canvas .off-canvas-toggle {
+    display: block;
+    position: absolute;
+    top: .4rem;
+    -webkit-transition: none;
+    transition: none;
+    z-index: 1;
+    left: .4rem
+}
+
+.off-canvas .off-canvas-sidebar {
+    background: #f7f8f9;
+    bottom: 0;
+    min-width: 10rem;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    -webkit-transition: -webkit-transform .25s;
+    transition: -webkit-transform .25s;
+    transition: transform .25s;
+    transition: transform .25s, -webkit-transform .25s;
+    z-index: 200;
+    left: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+
+.off-canvas .off-canvas-content {
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1;
+    flex: 1 1 auto;
+    height: 100%;
+    padding: .4rem .4rem .4rem 4rem
+}
+
+.off-canvas .off-canvas-overlay {
+    background: rgba(48, 55, 66, .1);
+    border-color: transparent;
+    border-radius: 0;
+    bottom: 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%
+}
+
+.off-canvas .off-canvas-sidebar.active,
+.off-canvas .off-canvas-sidebar:target {
+    -webkit-transform: translateX(0);
+    transform: translateX(0)
+}
+
+.off-canvas .off-canvas-sidebar.active~.off-canvas-overlay,
+.off-canvas .off-canvas-sidebar:target~.off-canvas-overlay {
+    display: block;
+    z-index: 100
+}
+
+@media(min-width:960px) {
+    .off-canvas.off-canvas-sidebar-show .off-canvas-toggle {
+        display: none
+    }
+    .off-canvas.off-canvas-sidebar-show .off-canvas-sidebar {
+        -webkit-flex: 0 0 auto;
+        -moz-box-flex: 0;
+        flex: 0 0 auto;
+        position: relative;
+        -webkit-transform: none;
+        transform: none
+    }
+    .off-canvas.off-canvas-sidebar-show .off-canvas-overlay {
+        display: none !important
+    }
+}
+
+/* ////////////////////////////////OFF-CANVASS////////////////////////////////////////////////// */
+/* ////////////////////////////////OFF-CANVASS////////////////////////////////////////////////// */
 /* ///////////////////////////////////MEDIA QUERY'S///////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////// */
 
