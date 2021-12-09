@@ -7,10 +7,11 @@
     <title>Ali-Store</title>
     <link rel="icon" type="image/png" href="favicon.ico" />
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script src="main.js" defer=""></script>
+    <script src="script.js" defer=""></script>
 </head>
 <body>
-    
+    <div class="cover" onclick="toggleSidenav();"></div>
         <div class="wrapper">
             <header class="navbar">
                 <!-- navbar left -->
@@ -24,67 +25,125 @@
                 </section>
                 <!-- navbar right -->
                 <section class="navbar_right hide">
-                    <div class="bagicon"><svg class="bagicon__icon" width="22" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.421 6.284h7.904v2.384c0 1.04-.416 2.038-1.157 2.774a3.969 3.969 0 01-5.59 0 3.908 3.908 0 01-1.157-2.774V6.284z" fill="#57584E"></path><path d="M11.373 0A3.969 3.969 0 008.58 1.15 3.908 3.908 0 007.42 3.923v2.53h1.635v-2.53a2.293 2.293 0 01.695-1.599 2.328 2.328 0 013.248 0c.434.423.683.997.695 1.6v2.53h1.635v-2.53a3.901 3.901 0 00-1.159-2.776A3.958 3.958 0 0011.373 0z" fill="#57584E"></path><path d="M21.996 23.67L20.102 7.343a1.19 1.19 0 00-.395-.754 1.208 1.208 0 00-.8-.303H13.71v2.317a2.31 2.31 0 01-.684 1.64 2.346 2.346 0 01-3.306 0 2.31 2.31 0 01-.684-1.64V6.285H3.844c-.296 0-.58.108-.801.303a1.19 1.19 0 00-.394.754L.758 23.671a1.185 1.185 0 00.297.93 1.201 1.201 0 00.898.399h18.844a1.21 1.21 0 00.9-.397 1.19 1.19 0 00.299-.932z" fill="#57584E"></path></svg></div>
+                    <div class="bagicon"><svg onclick="toggleSidenavs();" class="bagicon__icon" width="22" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.421 6.284h7.904v2.384c0 1.04-.416 2.038-1.157 2.774a3.969 3.969 0 01-5.59 0 3.908 3.908 0 01-1.157-2.774V6.284z" fill="#57584E"></path><path d="M11.373 0A3.969 3.969 0 008.58 1.15 3.908 3.908 0 007.42 3.923v2.53h1.635v-2.53a2.293 2.293 0 01.695-1.599 2.328 2.328 0 013.248 0c.434.423.683.997.695 1.6v2.53h1.635v-2.53a3.901 3.901 0 00-1.159-2.776A3.958 3.958 0 0011.373 0z" fill="#57584E"></path><path d="M21.996 23.67L20.102 7.343a1.19 1.19 0 00-.395-.754 1.208 1.208 0 00-.8-.303H13.71v2.317a2.31 2.31 0 01-.684 1.64 2.346 2.346 0 01-3.306 0 2.31 2.31 0 01-.684-1.64V6.285H3.844c-.296 0-.58.108-.801.303a1.19 1.19 0 00-.394.754L.758 23.671a1.185 1.185 0 00.297.93 1.201 1.201 0 00.898.399h18.844a1.21 1.21 0 00.9-.397 1.19 1.19 0 00.299-.932z" fill="#57584E"></path></svg></div>
                 </section>
                 <section class="navbar_right show"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#57584E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17.4999 17.4999L13.8749 13.8749" stroke="#57584E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></section>
             </header>
         </div>
-        <section class="boss-container">
+        <div class="boss-container">
             <div class="container-search">
                 <div class="hide-sm">
-                    <div class="input-search-wrapper undefined"><svg class="input-search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#57584E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17.5 17.4999L13.875 13.8749" stroke="#57584E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <div class="input-search-wrapper"><svg class="input-search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#57584E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17.5 17.4999L13.875 13.8749" stroke="#57584E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                         <input
-                            type="input" class="input-search input-search--light-bg" placeholder="Search for a product" style="color:#57584E;background-color:#e6e6e6" value="" /></div>
+                            type="input" class="input-search input-bg" placeholder="Search for a product" style="color:#57584E;background-color:#e6e6e6" value="" /></div>
                 </div>
             </div>
             <div class="container-product">
-                <div class="product pro1">
-                    <div class="product__media-container product__media-container--single-file product__media-container--single-file" style="background-color:#e6e6e6">
-                        <div class="file-wrapper file-wrapper__single-image"><img src="https://res.cloudinary.com/paystack/image/upload/q_auto/w_350,c_limit/public/files/products/9ny96cwwduor53svfbzo.jpg" class="product-view__media--img " /></div>
+                <div class="product pro1" id="myBtn">
+                    <div class="product__media-container  product_container-file" style="background-color:#e6e6e6">
+                        <div class="file-wrapper wrapper_image"><img src="9ny96cwwduor53svfbzo.jpg" class="media--img " /></div>
                     </div>
                     <div class="product__details">
-                        <div class="product__details__name"><span>TestProduct I</span></div>
-                        <div class="product__details__price">NGN 12,500</div>
+                        <div class="product_name"><span>TestProduct I</span></div>
+                        <div class="product_price">NGN 12,500</div>
                     </div>
                 </div>
-                <div class="product pro2">
-                    <div class="product__media-container product__media-container--single-file product__media-container--single-file" style="background-color:#e6e6e6">
-                        <div class="file-wrapper file-wrapper__single-image"><img src="https://res.cloudinary.com/paystack/image/upload/q_auto/w_350,c_limit/public/files/products/imh7lu7qrpbsoi6z96tg.png" class="product-view__media--img " /></div>
+                <div class="product pro2" id="myBtnn">
+                    <div class="product__media-container product_container-file" style="background-color:#e6e6e6">
+                        <div class="file-wrapper wrapper_image"><img src="imh7lu7qrpbsoi6z96tg.png" class="media--img " /></div>
                     </div>
                     <div class="product__details">
-                        <div class="product__details__name"><span>TestProduct I</span></div>
-                        <div class="product__details__price">NGN 12,500</div>
+                        <div class="product_name"><span>TestProduct I</span></div>
+                        <div class="product_price">NGN 12,500</div>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="off-canvas main-sidebar" style="height:initial">
-            <div class="off-canvas-sidebar">
+            <div id="mySidenav">
                 <div class="bagview">
-                    <div>
-                        <div class="bag-summary">
-                            <div class="bag-summary__header">
-                                <div class="bag-summary__header-left">
-                                    <div class="bagicon"><svg class="bagicon__icon" width="22" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.421 6.284h7.904v2.384c0 1.04-.416 2.038-1.157 2.774a3.969 3.969 0 01-5.59 0 3.908 3.908 0 01-1.157-2.774V6.284z" fill="#3bb75e"></path><path d="M11.373 0A3.969 3.969 0 008.58 1.15 3.908 3.908 0 007.42 3.923v2.53h1.635v-2.53a2.293 2.293 0 01.695-1.599 2.328 2.328 0 013.248 0c.434.423.683.997.695 1.6v2.53h1.635v-2.53a3.901 3.901 0 00-1.159-2.776A3.958 3.958 0 0011.373 0z" fill="#3bb75e"></path><path d="M21.996 23.67L20.102 7.343a1.19 1.19 0 00-.395-.754 1.208 1.208 0 00-.8-.303H13.71v2.317a2.31 2.31 0 01-.684 1.64 2.346 2.346 0 01-3.306 0 2.31 2.31 0 01-.684-1.64V6.285H3.844c-.296 0-.58.108-.801.303a1.19 1.19 0 00-.394.754L.758 23.671a1.185 1.185 0 00.297.93 1.201 1.201 0 00.898.399h18.844a1.21 1.21 0 00.9-.397 1.19 1.19 0 00.299-.932z" fill="#3bb75e"></path></svg></div>
-                                </div>
-                                <div class="bag-summary__header-right">
-                                    <p class="bag-summary__price-text">NGN 0</p>
-                                    <p class="bag-summary__shipping-price-text">Shipping:
-                                        <!-- -->
-                                        <!-- -->NGN 0</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bagview__content">
-                            <div class="bagview__empty">Your bag is empty</div>
-                        </div>
-                    </div>
-                    <div class="bagview__footer">
-                        <div class="bagview__actions"><button class="button">Keep Shopping</button></div>
-                    </div>
-                </div>
-            </div><a class="off-canvas-overlay"></a></div>
-    
+                                       <div id="bagviewbody">
+                                           <div class="bag-summary">
+                                               <div class="bag_header">
+                                                   <div class="bag_header-left">
+                                                       <div class="bagiconn"><svg class="bagicon__iconn" width="22" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.421 6.284h7.904v2.384c0 1.04-.416 2.038-1.157 2.774a3.969 3.969 0 01-5.59 0 3.908 3.908 0 01-1.157-2.774V6.284z" fill="#3bb75e"></path><path d="M11.373 0A3.969 3.969 0 008.58 1.15 3.908 3.908 0 007.42 3.923v2.53h1.635v-2.53a2.293 2.293 0 01.695-1.599 2.328 2.328 0 013.248 0c.434.423.683.997.695 1.6v2.53h1.635v-2.53a3.901 3.901 0 00-1.159-2.776A3.958 3.958 0 0011.373 0z" fill="#3bb75e"></path><path d="M21.996 23.67L20.102 7.343a1.19 1.19 0 00-.395-.754 1.208 1.208 0 00-.8-.303H13.71v2.317a2.31 2.31 0 01-.684 1.64 2.346 2.346 0 01-3.306 0 2.31 2.31 0 01-.684-1.64V6.285H3.844c-.296 0-.58.108-.801.303a1.19 1.19 0 00-.394.754L.758 23.671a1.185 1.185 0 00.297.93 1.201 1.201 0 00.898.399h18.844a1.21 1.21 0 00.9-.397 1.19 1.19 0 00.299-.932z" fill="#3bb75e"></path></svg></div>
+                                                   </div>
+                                                   <div class="bag_header-right">
+                                                       <p class="bag_price-text">NGN 0</p>
+                                                       <p class="bag_shipping-price-text">Shipping:
+                                                          <!--  -->
+                                                          <!--  --> NGN 0</p>
+               
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div class="bagview__content">
+                                               <div class="bagview__empty">Your bag is empty</div>
+                                           </div>
+                                       </div>
+                                       <div class="bagview__footer">
+                                           <div class="bagview__actions">
+                                            <button id="checkout" class="button button_btn" style="background: rgb(59, 183, 94);">Checkout</button>
+                                               <button class="button"  onclick="toggleSidenav();">Keep Shopping</button></div>
+                                       </div> 
+               </div>
+        
+
+
+
+       <!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" >&times;</span>
+        <div class="container-pop">
+          <div class="site1">
+            <img src="9ny96cwwduor53svfbzo.jpg" class="pop-img " />     
+             </div>
+          <div class="site2">
+            <p class="pop-details-name"><span>TestProduct I</span></p>
+            <p class="company_name">By DeliTech Solutions</p>
+            <div class="product_desc">
+                <p>This is a vivid description of the test product.</p>
+            </div>
+            <div class="quantity">
+                <p>How Many</p>
+            </div>
+            <div class="price">
+                <p class="price_header">Price</p>
+                <p class="price_ammount">NGN 12,500</p>
+            </div>
+            <button class="addtobag_button" style="background: rgb(59, 183, 94);">Add to bag</button>
+
+          </div>
+        </div>
+       </div>
+  </div>
+
+  <!-- SECOND MODAL  -->
+  <div id="myModall" class="modall">
+    <div class="modal-content">
+        <span class="closee" >&times;</span>
+        <div class="container-pop">
+          <div class="site1">
+            <img src="imh7lu7qrpbsoi6z96tg.png" class="pop-img " />     
+             </div>
+          <div class="site2">
+            <p class="pop-details-name"><span>TestProduct I</span></p>
+            <p class="company_name">By DeliTech Solutions</p>
+            <div class="product_desc">
+                <p>This is a vivid description of the test product.</p>
+            </div>
+            <div class="quantity">
+                <p>How Many</p>
+            </div>
+            <div class="price">
+                <p class="price_header">Price</p>
+                <p class="price_ammount">NGN 12,500</p>
+            </div>
+            <button class="addtobag_button" style="background: rgb(59, 183, 94);">Add to bag</button>
+
+          </div>
+        </div>
+       </div>
+  </div>
 
 
 </body>
