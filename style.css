@@ -321,7 +321,7 @@ body {
   
   .bag_header {
       justify-content: space-between;
-      padding: 35px;
+      padding: 30px;
       border-bottom: 1px dashed #e7e7e7
   }
   
@@ -561,14 +561,123 @@ body {
     color: #fafafa
 }
 
+/* /////////////////////////////////////////////////CHECK-OUT////////////////////////////// */
+
+.sidebar-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+.sidebar-footer {
+    border-top: 1px solid #f5f5f5
+}
+.sidebar-header {
+    padding: 35px;
+    border-bottom: 1px solid #f5f5f5
+}
+.sidebar-title {
+    font-size: 21px;
+    font-weight: 700;
+    font-family: Boing, Graphik, sans-serif;
+    color: #57584e;
+}
+
+.sidebar-ship-pay {
+    margin-top: 10px;
+}
+
+.sidebar-ship-pay {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-shipping {
+    margin-right: 10px;
+}
+.sidebar-pay {
+    margin-left: 10px;
+}
+
+.sidebar-shipping-title,
+.sidebar-pay-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #57584e;
+    
+}
+
+.sidebar-shipping-title, 
+    .sidebar-pay-title {
+    color: #57584e;
+}
+
+.sidebar-Bread {
+    margin-left: 5px;
+    margin-bottom: 1px;
+}
+
+/* ///////////////////////////inner content///////// */
+/* ///////////////////////////inner content///////// */
+.inner-content {
+    padding: 30px 35px
+}
+form {
+    display: block;
+    margin-top: -150px;
+}
+
+.gift-text{
+    color: #57584e;
+    font-size: 15px;
+    font-weight: 600;
+}
+.Recipient{
+    margin-top: 30px;
+}
+.Recipientlabel,
+.Recipientnumberlabel {
+    font-weight: 600;
+    font-size: 14px;
+    color: #57584e;
+}
+.Recipient-datails{
+    margin-top: 20px;
+
+}
+
+#firstname,
+#lastname,
+#number,
+#callingcode {
+    appearance: none;
+    min-height: 36px;
+    width: 47%;
+    background: #fff;
+    outline: none;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: #57584e;
+    padding: 8px 10px;
+    font-size: 14px;
+    
+}
+#firstname,
+#callingcode{
+    margin-right: 5%;
+}
+#callingcode{
+    width: 30%; 
+}
+
+
+
+
+
 
 /* ///////////////////////////////////MEDIA QUERY'S///////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////// */
-
-
-
-
-
 @media(min-width:600px) {
         .media--img
          {
