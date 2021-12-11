@@ -241,6 +241,8 @@ Recipientphonenumber.append(RecipientNumber);
 
 
 
+
+
   document.getElementById('sidebar-container').append(div0);
   document.getElementById('sidebar-container').append(innerContent);
   document.getElementById('sidebar-container').append(div2);
