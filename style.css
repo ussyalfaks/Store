@@ -252,7 +252,6 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    z-index: 2;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
