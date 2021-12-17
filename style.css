@@ -29,13 +29,6 @@ body {
     justify-content: space-between
 }
 
-/* .navbar{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: .4rem;
-    padding-right: .4rem;
-    width: 100%
-} */
 
 .navbar{
     
@@ -396,23 +389,28 @@ body {
       border-radius: 5px;
       outline: none;
       background: #fafafa;
-      color: #57584e
+      color: #57584e;
   }
   
   .button:active,
   .button:hover,
   .button[disabled] {
       border: 1px solid rgba(0, 0, 0, .05);
-      background: transparent none repeat 0 0/auto auto padding-box border-box scroll;
       background: initial;
-      opacity: .8
+      opacity: 3;
   }
-  
+  .button{
+    text-transform: none;
+    overflow: visible;
+
+
+  }
   .button_btn {
       border-radius: 5px;
       padding: 10px 20px;
-      color: #fff
+      color: #fff;
   }
+  
   
   .button_btn[disabled] {
       opacity: .3;
@@ -566,15 +564,23 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
+
 }
 .sidebar-footer {
-    border-top: 1px solid #f5f5f5
+    position: fixed;
+}
+.bag_header-footer {
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    border-top: 1px dashed #e7e7e7
 }
 .sidebar-header {
     padding: 35px;
     border-bottom: 1px solid #f5f5f5
 }
+
 .sidebar-title {
     font-size: 21px;
     font-weight: 700;
@@ -583,6 +589,8 @@ body {
 }
 
 .sidebar-ship-pay {
+    display: flex;
+    flex-direction: row;
     margin-top: 10px;
 }
 
@@ -619,39 +627,65 @@ body {
 /* ///////////////////////////inner content///////// */
 /* ///////////////////////////inner content///////// */
 .inner-content {
-    padding: 30px 35px
+        padding: 35px;
+        color: #57584e;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 }
 form {
     display: block;
-    margin-top: -150px;
+    
+}
+div{
+    display: block;
 }
 
 .gift-text{
     color: #57584e;
     font-size: 15px;
     font-weight: 600;
+    margin-bottom: 5%;
+
 }
-.Recipient{
-    margin-top: 30px;
+
+
+.recipient-number,
+.emialshow,
+.recipientemail,
+.deliveryaddress,
+.deliverynote,
+.Shippingregion,
+.recipient{
+    margin-top: 8%;
 }
-.Recipientlabel,
-.Recipientnumberlabel {
+.recipient-details{
+    margin-top: 3%;
+}
+.recipientnumberdetails{
+    margin-top: 3%;
+}
+.recipientlabel,
+.recipientnumberlabel,
+.recipientemaillabel,
+.emialshow-text,
+.deliveryaddresslabel,
+.deliverynotelabel,
+.shippingregionlabel {
     font-weight: 600;
     font-size: 14px;
     color: #57584e;
+    padding-bottom: 10px;
 }
-.Recipient-datails{
+.recipient-datails{
     margin-top: 20px;
 
 }
 
-#firstname,
-#lastname,
-#number,
-#callingcode {
+.input {
     appearance: none;
     min-height: 36px;
-    width: 47%;
+    width: 100%;
     background: #fff;
     outline: none;
     border: 1px solid #e7e7e7;
@@ -660,20 +694,224 @@ form {
     color: #57584e;
     padding: 8px 10px;
     font-size: 14px;
+    margin-top: 2%;
+    margin-bottom: 2%;
     
 }
-#firstname,
-#callingcode{
+.input-sm {
+    appearance: none;
+    min-height: 36px;
+    width: 49.2%;
+    background: #fff;
+    outline: none;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: #57584e;
+    padding: 8px 10px;
+    font-size: 14px;
+    margin-top: 3%;
+}
+.firstname,
+.callingcode{
     margin-right: 5%;
 }
-#callingcode{
+.callingcode{
     width: 30%; 
+}
+.showemail{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.recipientemail{
+    margin-bottom: 5%;
+}
+.emailaddress{
+    margin-top: 3%;
+    
+}
+.form_actions {
+    padding:20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.form_actions>:not(:first-child) {
+    margin-top: 10px
+}
+.Letsomeonepayforyou{
+    padding: 11px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*/////////////////////////////////// INNER CONTENT SECOND FORM /////////////////////////////////////////*/
+/*/////////////////////////////////// INNER CONTENT SECOND FORM /////////////////////////////////////////*/
+.client-number,
+.clientname,
+.clientemail{
+    margin-top: 5%;
+}
+.clientnamelabel,
+.clientnumberlabel,
+.clientemaillabel{
+    font-weight: 600;
+    font-size: 14px;
+    color: #57584e;
+    padding-bottom: 10px;
+}
+
+
+.divider{
+    padding: 11px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.divider p{
+    margin: 0 20px;
+    color: #909090;
+    font-size: 12px;
+}
+.dashed-divider{
+    border-top: 1px dashed #c1c1c1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+/* //////////////////////////////////  INNER CONTENT 3 ///////////////////////////////////// */
+/* //////////////////////////////////  INNER CONTENT 3 ///////////////////////////////////// */
+
+.inner-content-three{
+    padding: 30px 35px;
+}
+.share-img{
+    margin: 35px auto 25px;
+    display: block;
+}
+
+
+.text-subtitle {
+    margin-top: 5px;
+    font-weight: 400;
+}
+.text-header, 
+.text-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    color: #57584e;
+    text-align: center;
+}
+.text-header {
+    font-weight: 600;
+    margin: 0;
+}
+
+.copy{
+cursor: pointer;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5px 7px 5px 15px;
+position: static;
+width: 100%;
+height: 45px;
+border: 2px solid;
+box-shadow: 0 0 15px rgb(40 80 86 / 35%);
+border-radius: 6px;
+}
+
+@media (max-width: 480px){
+.copy-link {
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+}
+.copy-link {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    flex: 1 1;
+}
+.copy-button {
+    min-height: unset;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 12px;
+    border-radius: 6px;
 }
 
 
 
+.order-summary {
+    border: 1px solid #f5f5f5;
+    border-radius: 6px;
+    padding: 22px 20px;
+    margin-top: 10px;
 
 
+}
+.order-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.order-product-name-container {
+    flex-basis: 75%;
+}
+.order-product-name {
+    color: #57584e;
+    font-weight: 600;
+    font-size: 14px;
+}
+.order-summary .order-product-price-container {
+    text-align: right;
+}
+.order-product-price-container {
+    flex-basis: 25%;
+}
+.order-product-price {
+    color: #57584e;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.order-product-name.light,
+.order-product-price.light {
+    font-weight: 400;
+}
+
+.payForm {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.payForm button{
+    margin-top: 10px;
+}
+
+.divider .divider-dashed {
+    border-top: 1px dashed #c1c1c1;
+    flex: 1 1;
+}
+.divider p {
+    margin: 0 20px;
+    color: #909090;
+    font-size: 12px;
+}
 
 /* ///////////////////////////////////MEDIA QUERY'S///////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////// */
@@ -718,6 +956,7 @@ form {
         font-size: 15px;
         line-height: 18px
     }
+    
 }
 @media(max-width:700px){
 /* //////////////////// MODAL ////////////////////// */
@@ -812,4 +1051,8 @@ form {
             font-size: 15px;
             line-height: 18px
         }
+        .mySidenav{
+            width: 50%;
+        }
+        
 }
