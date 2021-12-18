@@ -8,6 +8,9 @@
     <link rel="icon" type="image/png" href="favicon.ico" />
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+
 </head>
 <body>
     <div class="cover" onclick="toggleSidenav();"></div>
@@ -320,11 +323,8 @@
                     </div>
                    <button class="button button_btn" type="button" style="color: rgb(59, 183, 94);">Pay for yourself</button>
                                 
-                      </div>
-
-
-
-                <!-- <div id="sidebar-footer">
+                      </div> 
+                        <!-- <div id="sidebar-footer">
                     <div class="bag-summary" id="bag-summary">
                         <div class="bag_header-footer">
                             <div class="bag_header-left">
@@ -337,10 +337,108 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
-            </div>
+                </div>
+
+                    <!-- <div class="sidebar-container-two">
+                        <div>
+                                <div class="order-header">
+                                    <span class="order-title">Order details</span>
+                                <div class="bagicon">
+                                    <svg class="bagicon-icon-inner" width="22" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.421 6.284h7.904v2.384c0 1.04-.416 2.038-1.157 2.774a3.969 3.969 0 01-5.59 0 3.908 3.908 0 01-1.157-2.774V6.284z" fill="#3bb75e"></path>
+                                             <path d="M11.373 0A3.969 3.969 0 008.58 1.15 3.908 3.908 0 007.42 3.923v2.53h1.635v-2.53a2.293 2.293 0 01.695-1.599 2.328 2.328 0 013.248 0c.434.423.683.997.695 1.6v2.53h1.635v-2.53a3.901 3.901 0 00-1.159-2.776A3.958 3.958 0 0011.373 0z" fill="#3bb75e"></path>
+                                            <path d="M21.996 23.67L20.102 7.343a1.19 1.19 0 00-.395-.754 1.208 1.208 0 00-.8-.303H13.71v2.317a2.31 2.31 0 01-.684 1.64 2.346 2.346 0 01-3.306 0 2.31 2.31 0 01-.684-1.64V6.285H3.844c-.296 0-.58.108-.801.303a1.19 1.19 0 00-.394.754L.758 23.671a1.185 1.185 0 00.297.93 1.201 1.201 0 00.898.399h18.844a1.21 1.21 0 00.9-.397 1.19 1.19 0 00.299-.932z" fill="#3bb75e"></path>
+                                    </svg>
+                                     <span class="cart-total" style="color: rgb(59, 183, 94);">1</span>
+                                </div>
+                            </div>
+                        </div>
+                  
+                    <div class="order-inner">
+                        <div class="order-contact-info">
+                           <div class="order-customer-info">
+                              <div class="order-customer-info__row">
+                                 <div class="order-avatar" style="background-color: rgb(59, 183, 94);">u</div>
+                                     <span class="order-customer-info-text bold">usman</span>
+                                 </div>
+                                <div class="order-customer-info__row">
+                                        <div class="order-icon-container">
+                                                <img src="email.svg" alt="email">
+                                     </div>
+                                        <span class="order-customer-info-text">usmanalfaki@</span>
+                                </div>
+                            <div class="order-customer-info__row">
+                                    <div class="order-icon-container">
+                                            <img src="phone.svg" alt="phone">
+                                </div>
+                                        <span class="order-customer-info-text">+233 0555084005</span>
+                                   </div>
+                            </div>
+                                <div class="gift-summary">
+                                        <div class="gift-container">
+                                                <div class="gift-header">
+                                                    <span>Gifting to</span>
+                                                </div>
+                                <div class="gift-text"> <span>umar</span>
+                                    <span>umar</span>
+                                </div>
+                                        <div class="gift-text"> <span>usmanalfaki</span>
+                                         </div>
+                            <div class="gift-text"> <span>234 87576201</span>
+                                 </div>
+                           </div>
+                         </div>
+                        
+                                <div class="order-address">
+                                        <span class="order-address__text title">Delivery Address</span>
+                                        <span class="order-address__text">ttytyyttyty</span>
+                                        <span class="order-address__text">
+                                            accra,
+                                            accra,
+                                            Ghana
+                                        </span>
+                        </div>
+                    </div>
+                    <div class="order-summary">
+                        <div class="order-row">
+                            <div class="order-product-name-container">
+                                <span class="order-product-name"> Product Name I x1 </span>
+                                    </div>
+                                     <div class="order-product-price-container">
+                                        <span class="order-product-price">NGN 3,000</span>
+                              </div>
+                         </div>
+
+
+                        <div class="order-row">
+                              <div class="order-product-name-container">
+                                    <span class="order-product-name light">Shipping to Within Abuja</span>
+                                </div>
+                                    <div class="order-product-price-container">
+                                            <span class="order-product-price light">NGN 1,000</span>
+                                   </div>
+                           </div>
+
+
+                        <div class="order-row">
+                           <div class="order-product-name-container">
+                                      <span class="order-product-name">Total</span>
+                           </div>
+                            <div class="order-product-price-container">
+                                    <span class="order-product-price">NGN 4,000</span>
+                                      </div>
+                               </div>
+                            </div>
+                        </div>
+                </div>
+            <div class="payment-sidebar-footer">
+                    <div class="payment-sidebar-actions">
+                        <button class="button button_btn" id="pay-button" type="button" style="background: rgb(59, 183, 94);">Please wait...</button>
+                        <button class="button" type="button">Back</button>
+                </div>
+            </div> -->
             
-            </div>
+    </div>
         
 
 

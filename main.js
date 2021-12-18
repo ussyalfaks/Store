@@ -55,7 +55,25 @@ function toggleSidenavs() {
     document.getElementById("mySidenav").style.width = "500px";
     document.getElementById("mySidenav").style.backgroundColor= "white";
     document.body.classList.toggle('sidenav-active')
+
+  
+
+    const mediaQuery = window.matchMedia('(max-width: 650px)');
+if (mediaQuery.matches) {
+  // Then trigger an alert
+  document.getElementById("mySidenav").style.width = "100%";
+}else{
+  document.getElementById("mySidenav").style.width = "500px";
+
 }
+
+// const query = window.matchMedia('(mix-width: 650px) and (max-width: 950px)');
+// if (query.matches) {
+//   // Then trigger an alert
+//   document.getElementById("mySidenav").style.width = "40%";
+// }
+}
+
 
 
 
