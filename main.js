@@ -47,31 +47,41 @@ hideme.onclick = function() {
 function toggleSidenav() {
   document.body.classList.toggle('sidenav-active');  
   document.body.classList.toggle('noscroll');
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.width = "0%";
 }
 
 
 function toggleSidenavs() {
+// var mediaQuery = window.matchMedia('(max-width: 650px)');
+// if (mediaQuery.matches) {
+//   // Then trigger an alert
+//   document.getElementById("mySidenav").style.width = "100%";
+//   document.body.classList.toggle('sidenav-active');
+// }
+// else if (mediaQuery.matches){
+//   document.getElementById("mySidenav").style.width = "500px";
+//   document.body.classList.toggle('sidenav-active');
+
+// }
+document.body.classList.toggle('sidenav-active');
+    document.getElementById("mySidenav").style.display = "block";
+function myFunction(x) {
+  if (x.matches) {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.body.classList.toggle('sidenav-active');
+    document.getElementById("mySidenav").style.display = "block";
+
+  } else {
+     
     document.getElementById("mySidenav").style.width = "500px";
-    document.getElementById("mySidenav").style.backgroundColor= "white";
-    document.body.classList.toggle('sidenav-active')
 
-  
 
-    const mediaQuery = window.matchMedia('(max-width: 650px)');
-if (mediaQuery.matches) {
-  // Then trigger an alert
-  document.getElementById("mySidenav").style.width = "100%";
-}else{
-  document.getElementById("mySidenav").style.width = "500px";
-
+  }
 }
 
-// const query = window.matchMedia('(mix-width: 650px) and (max-width: 950px)');
-// if (query.matches) {
-//   // Then trigger an alert
-//   document.getElementById("mySidenav").style.width = "40%";
-// }
+var x = window.matchMedia("(max-width: 650px)");
+myFunction(x);
+// x.addListener(myFunction)
 }
 
 

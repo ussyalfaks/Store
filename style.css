@@ -274,7 +274,8 @@ body {
 /*//////////////////////////////////////////////////////////// SIDE- BAR//////////////////////////////////// */
 #mySidenav {
     height: 100%; 
-    width: 0; 
+    /* width: 500px; */
+    display: none;
     position: fixed; 
     z-index: 1; 
     top: 0;
@@ -1111,9 +1112,12 @@ border-radius: 6px;
     .order-summary {
         border: 2px solid #25867e;
         border-radius: 6px;
-        padding: 27px 25px;
+        padding: 30px 35px;
         margin: 20px;
     }
+      /* #mySidenav{
+        width: 100%;
+    } */
 }
 @media(max-width:700px){
 /* //////////////////// MODAL ////////////////////// */
@@ -1176,6 +1180,7 @@ border-radius: 6px;
     .show{
         display: block;
     }
+  
 }
 @media(min-width:600px) and (max-width:800px){
         .container-product{
@@ -1208,8 +1213,6 @@ border-radius: 6px;
             font-size: 15px;
             line-height: 18px
         }
-        .mySidenav{
-            width: 50%;
-        }
+       
         
 }
