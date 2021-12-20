@@ -96,7 +96,7 @@ $(document).ready(function () {
   $('#checkbox2').change(function () {
     $('#autoUpdate2').fadeToggle();
   });
-});
+
 // end
 
 
@@ -109,7 +109,6 @@ document.querySelector(".sidebar-container-two").style.display="none";
 document.querySelector(".inner-content-three").style.display="none";
 
 
-document.addEventListener('DOMContentLoaded', () => {
 
    document.getElementById('checkout').onclick = (e) =>{
     e.preventDefault();
