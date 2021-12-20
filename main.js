@@ -84,20 +84,7 @@ myFunction(x);
 // x.addListener(myFunction)
 }
 
-// Toggle checkbox 
-$(document).ready(function () {
-  $('#checkbox1').change(function () {
-    $('#autoUpdate').fadeToggle();
-  });
-});
 
-// INNER Toggle
-$(document).ready(function () {
-  $('#checkbox2').change(function () {
-    $('#autoUpdate2').fadeToggle();
-  });
-
-// end
 
 
 // SIDEBAR AREA SHOW AND HIDE DIVS ONCLICK EVENT
@@ -108,6 +95,7 @@ document.querySelector("#showTwo").style.display="none";
 document.querySelector(".sidebar-container-two").style.display="none";
 document.querySelector(".inner-content-three").style.display="none";
 
+document.addEventListener('DOMContentLoaded', () => {
 
 
    document.getElementById('checkout').onclick = (e) =>{
