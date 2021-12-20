@@ -8,9 +8,7 @@
     <link rel="icon" type="image/png" href="favicon.ico" />
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer=""></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/vue@next"></script>
-
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 </head>
 <body>
     <div class="cover" onclick="toggleSidenav();"></div>
@@ -61,37 +59,37 @@
                 </div>
             </div>
             </div>
-      <div id="mySidenav">
-                <!-- <div class="bagview" id="bagview">
-                                           <div class="bag-summary" id="bag-summary">
-                                               <div class="bag_header">
-                                                   <div class="bag_header-left">
-                                                       <div class="bagiconn">
-                                                        <svg onclick="toggleSidenav();" class="bagicon__iconn" width="22" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.421 6.284h7.904v2.384c0 1.04-.416 2.038-1.157 2.774a3.969 3.969 0 01-5.59 0 3.908 3.908 0 01-1.157-2.774V6.284z" fill="#3bb75e"></path><path d="M11.373 0A3.969 3.969 0 008.58 1.15 3.908 3.908 0 007.42 3.923v2.53h1.635v-2.53a2.293 2.293 0 01.695-1.599 2.328 2.328 0 013.248 0c.434.423.683.997.695 1.6v2.53h1.635v-2.53a3.901 3.901 0 00-1.159-2.776A3.958 3.958 0 0011.373 0z" fill="#3bb75e"></path><path d="M21.996 23.67L20.102 7.343a1.19 1.19 0 00-.395-.754 1.208 1.208 0 00-.8-.303H13.71v2.317a2.31 2.31 0 01-.684 1.64 2.346 2.346 0 01-3.306 0 2.31 2.31 0 01-.684-1.64V6.285H3.844c-.296 0-.58.108-.801.303a1.19 1.19 0 00-.394.754L.758 23.671a1.185 1.185 0 00.297.93 1.201 1.201 0 00.898.399h18.844a1.21 1.21 0 00.9-.397 1.19 1.19 0 00.299-.932z" fill="#3bb75e"></path></svg></div>
-                                                   </div>
-                                                   <div class="bag_header-right">
-                                                       <p class="bag_price-text">NGN 0</p>
-                                                       <p class="bag_shipping-price-text">Shipping:
-                                                          
-                                                           NGN 0</p>
-               
-                                                   </div>
-                                               </div>
-                                           </div>
-                                           <div class="bagview__content" id="bagview__content">
-                                               <div class="bagview__empty">Your bag is empty</div>
-                                           </div>
+      <div class="mySidenav">
+                <div class="bagview" id="bagview" >
+                                          <div>
+                                            <div class="bag-summary" id="bag-summary">
+                                                <div class="bag_header">
+                                                    <div class="bag_header-left">
+                                                        <div class="bagiconn">
+                                                         <svg onclick="toggleSidenav();" class="bagicon__iconn" width="22" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.421 6.284h7.904v2.384c0 1.04-.416 2.038-1.157 2.774a3.969 3.969 0 01-5.59 0 3.908 3.908 0 01-1.157-2.774V6.284z" fill="#3bb75e"></path><path d="M11.373 0A3.969 3.969 0 008.58 1.15 3.908 3.908 0 007.42 3.923v2.53h1.635v-2.53a2.293 2.293 0 01.695-1.599 2.328 2.328 0 013.248 0c.434.423.683.997.695 1.6v2.53h1.635v-2.53a3.901 3.901 0 00-1.159-2.776A3.958 3.958 0 0011.373 0z" fill="#3bb75e"></path><path d="M21.996 23.67L20.102 7.343a1.19 1.19 0 00-.395-.754 1.208 1.208 0 00-.8-.303H13.71v2.317a2.31 2.31 0 01-.684 1.64 2.346 2.346 0 01-3.306 0 2.31 2.31 0 01-.684-1.64V6.285H3.844c-.296 0-.58.108-.801.303a1.19 1.19 0 00-.394.754L.758 23.671a1.185 1.185 0 00.297.93 1.201 1.201 0 00.898.399h18.844a1.21 1.21 0 00.9-.397 1.19 1.19 0 00.299-.932z" fill="#3bb75e"></path></svg></div>
+                                                    </div>
+                                                    <div class="bag_header-right">
+                                                        <p class="bag_price-text">NGN 0</p>
+                                                        <p class="bag_shipping-price-text">Shipping:
+                                                           
+                                                            NGN 0</p>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bagview__content" id="bagview__content">
+                                                <div class="bagview__empty">Your bag is empty</div>
+                                            </div>
+                                          </div>
 
-                                            
-                                       
                                        <div class="bagview__footer" id="bagview__footer">
                                            <div class="bagview__actions">
-                                            <button id="checkout" class="button button_btn" style="background: rgb(59, 183, 94);">Checkout</button>
+                                            <button  id="checkout" class="button button_btn" style="background: rgb(59, 183, 94);">Checkout</button>
                                                <button class="button"  onclick="toggleSidenav();">Keep Shopping</button>
                                             </div>
                                        </div> 
-               </div> -->
-                <div class="sidebar-container">
+               </div>
+            <div class="sidebar-container" >
                 <div class="sidebar-header">
                     <span class="sidebar-title">Ali-store</span>
                     <div class="sidebar-ship-pay">
@@ -109,152 +107,157 @@
                 </div> 
             <!-- ////////////////////////////////////INNER CONTENT 1//////////////////////////////// -->
             <!-- ////////////////////////////////////INNER CONTENT 1//////////////////////////////// -->
-                 <!-- <div class="inner-content">
-                    <form>
+                <div id="showOne">
+                    <div class="inner-content">
+                        <form>
+                            <div class="form-control">
+                                <label class="gift-text">
+                                    <input type="checkbox" id="checkbox1" name="isGift" class="check">
+                                    is this a gift?
+                                </label>
+                           
+                              <div id="autoUpdate">
+                
+                                <div class="recipient">
+                                    <label class="recipientlabel">Recipient name</label>
+                                    <div class="recipient-details">
+                                        <input type="text" name="FirstName" class="input-sm" placeholder="First Name" />
+                                        <input type="text" name="lastname" class="input-sm" placeholder="Last Name" />
+                
+                                    </div>
+                                </div>
+                            <div class="recipient-number">
+                                <label class="recipientnumberlabel">Recipient phone number</label>
+                                
+                                <div class="recipientnumberdetails">
+                                    <input type="text" class="input-sm" />
+                                    <input type="text" class="input-sm" />
+                                </div>
+                             </div>
+                            <div class="form-control">
+                                <div class="emialshow">
+                                    <label class="emialshow-text">
+                                      <input type="checkbox" name="" id="checkbox2" class="showemail">
+                                      Inform recipient via email
+                                  </label>
+                               </div>
+                                  <div class="recipientemail" id="autoUpdate2">
+                                      <label class="recipientemaillabel">Recipient email address</label>
+                  
+                                      <div class="emailaddress">
+                                          <input type="email" class="input" placeholder="Recipient email address" name="email">
+                                      </div>
+                                  </div>
+                                </div>
+                           </div>
+                            </div>
+                
                         <div class="form-control">
-                            <label class="gift-text">
-                                <input type="checkbox" name="isGift" class="check">
-                                is this a gift?
-                            </label>
-                       
-                          <div class="show-hide">
-            
-                            <div class="recipient">
-                                <label class="recipientlabel">Recipient name</label>
-                                <div class="recipient-details">
+                             <div class="deliveryaddress">
+                             <label class="deliveryaddresslabel" for="address">Delivery address</label>
+                             <div class="deliveryaddress-details">
+                                 <input type="text" placeholder="Full Address" class="input" name="address">
+                                 <input type="text" placeholder="City" class="input-sm" name="">
+                                 <input type="text" placeholder="State" class="input-sm" name="">
+                                 <input type="text" class="input" name="">
+                             </div>
+                         </div>
+                        </div>
+                
+                
+                         <div class="form-control">
+                             <div class="deliverynote">
+                                 <label class="deliverynotelabel">Delivery note</label>
+                                 <div class="deliverynote-details">
+                                     <input type="text" placeholder="Optional" class="input">
+                                 </div>
+                             </div>
+                         </div>
+                
+                         <div class="form-control">
+                             <div class="Shippingregion">
+                                 <label class="shippingregionlabel">Shipping region</label>
+                                 <div class="Shippingregion-details">
+                                     <input type="text" placeholder="Shipping region" class="input">
+                                 </div>
+                             </div>
+                         </div>
+                
+                
+                          <div class="form_footer">
+                               <div class="form_actions">
+                                <button id="Continuetopay" class="button button_btn" style="background: rgb(59, 183, 94);">Continue to pay</button>
+                                   <button class="button" id="backOne">Back</button>
+                                </div>
+                           </div>
+                        </form> 
+                    </div> 
+                </div>
+
+
+                <!-- ////////////////////////////inner content 2 ///////////////////////-->
+                <!-- ////////////////////////////inner content 2 ///////////////////////-->
+
+
+                <div id="showTwo">
+                    <div class="inner-content">
+                        <form>
+                            <div class="clientname">
+                                <label class="clientnamelabel">Your name</label>
+                                <div class="client-details">
                                     <input type="text" name="FirstName" class="input-sm" placeholder="First Name" />
                                     <input type="text" name="lastname" class="input-sm" placeholder="Last Name" />
             
                                 </div>
                             </div>
-                        <div class="recipient-number">
-                            <label class="recipientnumberlabel">Recipient phone number</label>
-                            
-                            <div class="recipientnumberdetails">
-                                <input type="text" class="input-sm" />
-                                <input type="text" class="input-sm" />
+                            <div class="clientemail">
+                                <label class="clientemaillabel">Your email address</label>
+            
+                                <div class="emailaddress">
+                                    <input type="email" class="input" placeholder="you@mail.com" name="email">
+                                </div>
                             </div>
-                         </div>
-                        <div class="form-control">
-                            <div class="emialshow">
-                                <label class="emialshow-text">
-                                  <input type="checkbox" name="" class="showemail">
-                                  Inform recipient via email
-                              </label>
-                           </div>
-                              <div class="recipientemail">
-                                  <label class="recipientemaillabel">Recipient email address</label>
-              
-                                  <div class="emailaddress">
-                                      <input type="email" class="input" placeholder="Recipient email address" name="email">
-                                  </div>
-                              </div>
-                            </div>
-                       </div>
-                        </div>
-            
-                    <div class="form-control">
-                         <div class="deliveryaddress">
-                         <label class="deliveryaddresslabel" for="address">Delivery address</label>
-                         <div class="deliveryaddress-details">
-                             <input type="text" placeholder="Full Address" class="input" name="address">
-                             <input type="text" placeholder="City" class="input-sm" name="">
-                             <input type="text" placeholder="State" class="input-sm" name="">
-                             <input type="text" class="input" name="">
-                         </div>
-                     </div>
-                    </div>
-            
-            
-                     <div class="form-control">
-                         <div class="deliverynote">
-                             <label class="deliverynotelabel">Delivery note</label>
-                             <div class="deliverynote-details">
-                                 <input type="text" placeholder="Optional" class="input">
+                            <div class="client-number">
+                                <label class="clientnumberlabel">Your phone number</label>
+                                
+                                <div class="clientnumberdetails">
+                                    <input type="text" class="input-sm" />
+                                    <input type="text" class="input-sm" />
+                                </div>
                              </div>
-                         </div>
-                     </div>
-            
-                     <div class="form-control">
-                         <div class="Shippingregion">
-                             <label class="shippingregionlabel">Shipping region</label>
-                             <div class="Shippingregion-details">
-                                 <input type="text" placeholder="Shipping region" class="input">
-                             </div>
-                         </div>
-                     </div>
-            
-            
-                      <div class="form_footer">
-                           <div class="form_actions">
-                            <button class="button button_btn" style="background: rgb(59, 183, 94);">Continue to pay</button>
-                               <button class="button">Back</button>
+    
+                             <div class="form_footer">
+                                <div class="form_actions">
+                                 <button id="Reviewandpay" class="button button_btn" style="background: rgb(59, 183, 94);">Review and pay</button>
+                                    <button  class="button" id="backTwo">Back</button>
+                                 </div>
                             </div>
-                       </div>
-                    </form> 
-                </div>  -->
-
-
-                <!-- ////////////////////////////inner content 2 ///////////////////////-->
-                <!-- ////////////////////////////inner content 2 ///////////////////////-->
-
-
-
-
-                <div class="inner-content">
-                    <form>
-                        <div class="clientname">
-                            <label class="clientnamelabel">Your name</label>
-                            <div class="client-details">
-                                <input type="text" name="FirstName" class="input-sm" placeholder="First Name" />
-                                <input type="text" name="lastname" class="input-sm" placeholder="Last Name" />
-        
-                            </div>
+                        </form>
+               
+    
+                      <div>
+                          <div class="divider">
+                              <div class="dashed-divider"></div>
+                              <p>or</p>
+                              <div class="dashed-divider"></div>
+                          </div>
+    
+                        <div class="Letsomeonepayforyou">
+                            <button id="Letsomeonepayforyou" class="button" type="button" style="color: rgb(59, 183, 94);">Let someone pay for you</button>   
+                                             </div>                  
+                          </div>
                         </div>
-                        <div class="clientemail">
-                            <label class="clientemaillabel">Your email address</label>
-        
-                            <div class="emailaddress">
-                                <input type="email" class="input" placeholder="you@mail.com" name="email">
-                            </div>
-                        </div>
-                        <div class="client-number">
-                            <label class="clientnumberlabel">Your phone number</label>
-                            
-                            <div class="clientnumberdetails">
-                                <input type="text" class="input-sm" />
-                                <input type="text" class="input-sm" />
-                            </div>
-                         </div>
+                </div>
 
-                         <div class="form_footer">
-                            <div class="form_actions">
-                             <button class="button button_btn" style="background: rgb(59, 183, 94);">Review and pay</button>
-                                <button class="button">Back</button>
-                             </div>
-                        </div>
-                    </form>
-           
-
-                  <div>
-                      <div class="divider">
-                          <div class="dashed-divider"></div>
-                          <p>or</p>
-                          <div class="dashed-divider"></div>
-                      </div>
-
-                    <div class="Letsomeonepayforyou">
-                        <button class="button" type="button" style="color: rgb(59, 183, 94);">Let someone pay for you</button>   
-                                         </div>                  
-                      </div>
-                    </div>
+               
 
 
  <!--// //////////////////////////////////INNER CONTENT 3/////////////////////////////////////////// -->
  <!--// //////////////////////////////////INNER CONTENT 3/////////////////////////////////////////// -->
                     
 
-                    <!-- <div class="inner-content-three">
+                    <div class="inner-content-three">
+                       <div class="content-three">
                         <svg class="share-img" width="45" height="49" viewBox="0 0 45 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9942 13C20.5146 13.0006 19.0958 13.5843 18.0498 14.6228C17.0039 15.6613 16.4163 17.0694 16.4163 18.5377V21.8706V21.8716H11.3666C10.9499 21.8712 10.5477 22.0231 10.2367 22.2982C9.92561 22.5733 9.72746 22.9524 9.68002 23.3631L7.01102 46.4115C6.9838 46.6473 7.00713 46.8862 7.07947 47.1125C7.15181 47.3388 7.27153 47.5473 7.43078 47.7245C7.59003 47.9016 7.78521 48.0433 8.00353 48.1404C8.22185 48.2374 8.45837 48.2876 8.69759 48.2875H35.2964C35.5361 48.2884 35.7733 48.2389 35.9924 48.1422C36.2114 48.0455 36.4073 47.9039 36.5672 47.7267C36.7271 47.5495 36.8474 47.3406 36.9201 47.1139C36.9928 46.8872 37.0163 46.6478 36.989 46.4115L34.3152 23.3631C34.2675 22.9525 34.0693 22.5735 33.7583 22.2985C33.4473 22.0234 33.0452 21.8715 32.6286 21.8716H27.5781V18.5377C27.5779 17.8102 27.4334 17.0899 27.1526 16.4179C26.8719 15.7459 26.4606 15.1353 25.942 14.621C25.4235 14.1068 24.808 13.699 24.1306 13.4208C23.4532 13.1427 22.7272 12.9997 21.9942 13ZM25.2701 21.8706H18.7242V18.5377C18.7406 17.6871 19.0927 16.8767 19.7047 16.2809C20.3167 15.6851 21.1398 15.3513 21.9972 15.3513C22.8545 15.3513 23.6777 15.6851 24.2897 16.2809C24.9017 16.8767 25.2537 17.6871 25.2701 18.5377V21.8706Z" fill="#3bb75e"></path>
                             <path d="M21.8871 39.15C24.3471 39.15 25.9071 37.92 25.9071 35.94C25.9071 34.515 25.0821 33.63 23.8371 33.345C24.8721 32.955 25.5771 32.22 25.5771 31.005C25.5771 29.415 24.2721 28.125 22.0371 28.125C19.7421 28.125 18.3471 29.55 18.2421 31.41H20.0121C20.1321 30.33 20.8671 29.64 22.0071 29.64C23.1171 29.64 23.6721 30.285 23.6721 31.155C23.6721 32.16 23.1171 32.73 21.8871 32.73H21.1221V34.155H21.9471C23.2521 34.155 23.8821 34.74 23.8821 35.91C23.8821 36.975 23.2371 37.65 21.8421 37.65C20.4021 37.65 19.7721 36.81 19.6671 35.685H17.8521C17.9421 37.74 19.3371 39.15 21.8871 39.15Z" fill="white"></path>
@@ -321,10 +324,13 @@
                                  <p>or</p>
                           <div class="divider-dashed"></div>
                     </div>
-                   <button class="button button_btn" type="button" style="color: rgb(59, 183, 94);">Pay for yourself</button>
-                                
-                      </div>  -->
-                        <!-- <div id="sidebar-footer">
+                   <button id="Payforyourself" class="button button_btn" type="button" style="color: rgb(59, 183, 94);">Pay for yourself</button>
+                       </div>
+                    </div> 
+
+
+
+                         <div id="sidebar-footer">
                     <div class="bag-summary" id="bag-summary">
                         <div class="bag_header-footer">
                             <div class="bag_header-left">
@@ -338,8 +344,9 @@
                         </div>
                     </div>
                 </div>
-
-                    <!-- <div class="sidebar-container-two">
+            </div>
+                
+                    <div class="sidebar-container-two">
                         <div>
                                 <div class="order-header">
                                     <span class="order-title">Order details</span>
@@ -430,13 +437,14 @@
                                </div>
                             </div>
                         </div>
-                </div>
+                
             <div class="payment-sidebar-footer">
                     <div class="payment-sidebar-actions">
                         <button class="button button_btn" id="pay-button" type="button" style="background: rgb(59, 183, 94);">Please wait...</button>
-                        <button class="button" type="button">Back</button>
+                        <button class="button" type="button" id="backThree">Back</button>
                 </div>
-            </div> -->
+            </div>
+        </div>
             
     </div>
         
