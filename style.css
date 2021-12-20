@@ -657,6 +657,10 @@ div{
     font-weight: 600;
     margin-bottom: 5%;
 }
+#autoUpdate2,
+#autoUpdate{
+    display: none;
+}
 
 
 .recipient-number,

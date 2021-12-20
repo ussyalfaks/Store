@@ -84,7 +84,17 @@ myFunction(x);
 // x.addListener(myFunction)
 }
 
+// SHOW HIDE USING CHECKBOX
+function ShowHideDiv(checkbox1) {
+  var autoUpdate = document.getElementById("autoUpdate");
+  autoUpdate.style.display = checkbox1.checked ? "block" : "none";
+}
 
+// INNER SHOW HIDE 
+function ShowHide(checkbox2) {
+  var autoUpdate2 = document.getElementById("autoUpdate2");
+  autoUpdate2.style.display = checkbox2.checked ? "block" : "none";
+}
 
 
 // SIDEBAR AREA SHOW AND HIDE DIVS ONCLICK EVENT

@@ -112,7 +112,7 @@
                         <form>
                             <div class="form-control">
                                 <label class="gift-text">
-                                    <input type="checkbox" id="checkbox1" name="isGift" class="check">
+                                    <input type="checkbox"  id="checkbox1" name="isGift" class="check" onclick="ShowHideDiv(this)">
                                     is this a gift?
                                 </label>
                            
@@ -137,7 +137,7 @@
                             <div class="form-control">
                                 <div class="emialshow">
                                     <label class="emialshow-text">
-                                      <input type="checkbox" name="" id="checkbox2" class="showemail">
+                                      <input type="checkbox" name="" id="checkbox2" class="showemail" onclick="ShowHide(this)">
                                       Inform recipient via email
                                   </label>
                                </div>
@@ -507,20 +507,20 @@
        </div>
   </div>
 <script>
-    // Toggle checkbox 
-$(document).ready(function () {
-  $('#checkbox1').change(function () {
-    $('#autoUpdate').fadeToggle();
-  });
-});
+//     // Toggle checkbox 
+// $(document).ready(function () {
+//   $('#checkbox1').change(function () {
+//     $('#autoUpdate').fadeToggle();
+//   });
+// });
 
-// INNER Toggle
-$(document).ready(function () {
-  $('#checkbox2').change(function () {
-    $('#autoUpdate2').fadeToggle();
-  });
-});
-// end
+// // INNER Toggle
+// $(document).ready(function () {
+//   $('#checkbox2').change(function () {
+//     $('#autoUpdate2').fadeToggle();
+//   });
+// });
+// // end
 </script>
 </body>
 </html>
