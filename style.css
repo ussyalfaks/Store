@@ -132,7 +132,9 @@ body {
     line-height: 24px;
     outline: none
 }
-
+.show{
+    cursor: pointer;
+}
 
 .input-search::placeholder {
     color: #e7e7e7;
@@ -1264,6 +1266,7 @@ border-radius: 6px;
     }
     .container-search{
         display: none;
+        width: 100%;
     }
     .boss-container{
         width: 100%;

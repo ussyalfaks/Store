@@ -106,7 +106,12 @@ document.querySelector(".sidebar-container-two").style.display="none";
 document.querySelector(".inner-content-three").style.display="none";
 
 document.addEventListener('DOMContentLoaded', () => {
-
+  // ONCLICK SHOW SEARCH FIELD 
+  document.querySelector(".show").onclick = (e) => {
+    e.preventDefault();
+    document.querySelector(".container-search").style.display="block";
+  }
+  // END
 
    document.getElementById('checkout').onclick = (e) =>{
     e.preventDefault();
