@@ -1288,6 +1288,86 @@ border-radius: 6px;
       /* #mySidenav{
         width: 100%;
     } */
+
+    .content {
+        margin-bottom: 30px;
+    }
+    
+    .content-media {
+        width: 55px;
+        border-radius: 6px;
+    }
+    
+    
+    
+    .content-price {
+        margin-left: 10px;
+        max-width: 200px;
+    }
+    
+    .content-price-text {
+        font-size: 12px;
+    }
+    
+    p {
+        margin: 0 0 1.1rem;
+    }
+    
+    .content-shippingpricetext {
+        font-size: 14px;
+    }
+    
+    p {
+        margin: 0 0 1.1rem;
+    }
+    
+    
+    .q_input, .q_minus {
+        width: 38px;
+        height: 38px;
+    }
+    .q_minus {
+        font-size: 13px;
+        border: 1px solid #e7e7e7;
+    border-right-width: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    }
+    
+    
+    
+    .q_input {
+        font-size: 12px;
+        border: 1px solid #e7e7e7;
+        border-right: none;
+        border-left: none;
+    }
+    
+    .q_plus{
+        border: 1px solid #e7e7e7;
+        border: 1px solid #e7e7e7;
+    border-left-width: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    }
+    
+    .q_plus {
+        width: 38px;
+        font-size: 16px;
+        height: 38px;
+    }
+    
+    
+    
+    
+    .delete_product{
+        width: 28px;
+        height: 28px;
+    }
 }
 @media(max-width:700px){
 /* //////////////////// MODAL ////////////////////// */
