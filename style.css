@@ -87,7 +87,6 @@ body {
 
 
 .input-search-wrapper {
-    display: -webkit-flex;
     display: -moz-box;
     display: flex;
     align-items: center;
@@ -108,7 +107,6 @@ body {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    display: -webkit-flex;
     display: -moz-box;
     display: flex;
     align-items: center;
@@ -215,7 +213,6 @@ body {
 .product__details {
     background: #fff;
     border-radius: 0 0 6px 6px;
-    display: -webkit-flex;
     display: -moz-box;
     display: flex;
     flex-direction: column;
@@ -360,20 +357,16 @@ body {
   }
   
   .bagview__content {
-      padding: 35px
+      padding: 35px;
   }
-  .bagview__empty {
+  /* .bagview__empty {
       padding: 35px;
       text-align: center
-  }
-  
+  } */
   .bagview__actions {
         padding: 30px;
-        display: -webkit-flex;
         display: flex;
-        -webkit-flex-direction: column;
         flex-direction: column;
-        -webkit-justify-content: space-between;
         justify-content: space-between;
         border-top: 1px solid #f5f5f5;
   }
@@ -432,6 +425,164 @@ body {
   /* ///////////////////////////////////////////////////END SIDE BAR /////////////////////////////////////// */
 
 
+
+
+  /*///////////////////////////////////////////////////// START OF SIDE BAR CONTENT////////////////////////////   */
+  
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.pic_and_name {
+    justify-content: flex-start;
+}
+
+.picname {
+    display: flex;
+}
+
+
+.content-media {
+    width: 60px;
+    border-radius: 6px;
+}
+
+
+img {
+    border-style: none;
+}
+
+.content-price {
+    margin-left: 10px;
+    max-width: 200px;
+}
+
+.content-price-text {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0 0 1.2rem;
+}
+
+.content-shippingpricetext {
+    font-size: 14px;
+    font-weight: 500;
+    color: #919191;
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0 0 1.2rem;
+}
+
+
+.column {
+    flex-direction: column;
+}
+
+.picname {
+    display: flex;
+}
+.content-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.quantity {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.q_input, .q_minus {
+    width: 40px;
+    color: #57584e;
+    height: 40px;
+    outline: none;
+    text-align: center;
+}
+.q_minus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-right-width: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: pointer;
+}
+
+
+.q_input[type=number] {
+    appearance: none;
+    border-radius: 0;
+}
+
+.q_input {
+    font-size: 14px;
+    border: 1px solid #e7e7e7;
+    border-right: none;
+    border-left: none;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+    padding-top: 3px;
+    text-align: center;
+}
+
+.q_plus{
+    border: 1px solid #e7e7e7;
+    border-left-width: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+.q_plus {
+    display: flex;
+    align-items: center;
+}
+
+.q_plus {
+    width: 40px;
+    justify-content: center;
+    color: #57584e;
+    font-size: 16px;
+    height: 40px;
+    background-color: #fff;
+}
+
+
+
+
+.delete_product{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 32px;
+    height: 34px;
+    background-image: url(trash.svg);
+}
+
+
+
+  /* /////////////////////////////////////////////////////end of content in side bar //////////////////////////////*/
 
 /* /////////////////////////POP-UP////////////////////////////////////////////////////////////////////////// */
 /* /////////////////////////POP-UP////////////////////////////////////////////////////////////////////////// */
@@ -650,7 +801,10 @@ form {
 div{
     display: block;
 }
-
+/* .check[type="checked"]::before{
+    width: 20px;
+    height: 20px;
+} */
 .gift-text{
     color: #57584e;
     font-size: 15px;

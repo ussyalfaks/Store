@@ -8,7 +8,6 @@
     <link rel="icon" type="image/png" href="favicon.ico" />
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer=""></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 </head>
 <body>
     <div class="cover" onclick="toggleSidenav();"></div>
@@ -78,7 +77,72 @@
                                                 </div>
                                             </div>
                                             <div class="bagview__content" id="bagview__content">
-                                                <div class="bagview__empty">Your bag is empty</div>
+                                                <!-- FIRST CONTENT  -->
+                                                    <div class="content">
+                                    <div class="picname pic_and_name">
+                                        <div>
+                                                <img class="content-media" src="9ny96cwwduor53svfbzo.jpg">
+                                                                                </div>
+                                            <div class="content-price">
+                                                                <p class="content-price-text">TestProduct I</p>
+                                                                <p class="content-shippingpricetext">NGN&nbsp;12,500</p>
+                                            </div>
+                                                    </div>
+                                        <div class="picname column">
+                                                <div class="content-quantity">
+                                                    <div class="quantity undefined">
+                                                        <span>
+                                                             <button class="q_minus" type="button">
+                                                                         <img src="minus.svg" alt="Decrement">
+                                                             </button>
+                                                                     </span>
+                                                                             <input type="number" class="q_input" value="1">
+                                                                     <span>
+                                                                         <button id="increaseQuantity" class="q_plus" type="button">
+                                                                        <img src="plus.svg" alt="Increment">
+                                                                        </button>
+                                                     </span>
+                                                </div>
+                                                     <button type="button" class="delete_product"></button>
+                                        
+                                            </div>
+                                                </div>
+                                                    </div>
+        <!-- END OF FIRST CONTENT  -->
+                                                    <!-- SECOND CONTENT  -->
+                                                    <div class="content">
+                                                        <div class="picname pic_and_name">
+                                                            <div>
+                                                                    <img class="content-media" src="imh7lu7qrpbsoi6z96tg.png">
+                                                                                                    </div>
+                                                                <div class="content-price">
+                                                                                    <p class="content-price-text">TestProduct I</p>
+                                                                                    <p class="content-shippingpricetext">NGN&nbsp;12,500</p>
+                                                                </div>
+                                                                        </div>
+                                                            <div class="picname column">
+                                                                    <div class="content-quantity">
+                                                                        <div class="quantity undefined">
+                                                                            <span>
+                                                                                 <button class="q_minus" type="button">
+                                                                                             <img src="minus.svg" alt="Decrement">
+                                                                                 </button>
+                                                                                         </span>
+                                                                                                 <input type="number" class="q_input" value="1">
+                                                                                         <span>
+                                                                                             <button id="increaseQuantity" class="q_plus" type="button">
+                                                                                            <img src="plus.svg" alt="Increment">
+                                                                                            </button>
+                                                                         </span>
+                                                                    </div>
+                                                                         <button type="button" class="delete_product"></button>
+                                                            
+                                                                </div>
+                                                                    </div>
+                                                                        </div>
+                                                    <!-- END OF SECOND CONTENT  -->
+                            
+
                                             </div>
                                           </div>
 
@@ -506,21 +570,5 @@
         </div>
        </div>
   </div>
-<script>
-//     // Toggle checkbox 
-// $(document).ready(function () {
-//   $('#checkbox1').change(function () {
-//     $('#autoUpdate').fadeToggle();
-//   });
-// });
-
-// // INNER Toggle
-// $(document).ready(function () {
-//   $('#checkbox2').change(function () {
-//     $('#autoUpdate2').fadeToggle();
-//   });
-// });
-// // end
-</script>
 </body>
 </html>
